@@ -1,0 +1,18 @@
+@media (max-width: 55em) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .tilt-left:hover {
+    transform: translateY(-10px);
+    box-shadow: none;
+  }
+
+  .tilt-right:hover {
+    transform: translateY(-10px);
+    box-shadow: none;
+  }
+}

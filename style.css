@@ -1,0 +1,160 @@
+/* ---- 01 TYPOGRAPHY SYSTEM----
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* ---- 02 Colors ---- 
+primary :
+accent:
+*/
+/* ---- 07 WHITESPACE ----
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+.header-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 10rem auto;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 4.2rem;
+}
+
+.primary-heading {
+  font-size: 3rem;
+  font-weight: 900;
+
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+.secondary-heading {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* .step-1 {
+  position: relative;
+} */
+
+.step-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.step-nb {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.box--bl {
+  background-color: rgb(55, 100, 248);
+}
+.box--or {
+  background-color: rgb(233, 184, 50);
+}
+.box--gr {
+  background-color: rgb(53, 177, 90);
+}
+
+.card-txt {
+  text-align: center;
+  color: #222;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.card-img {
+  background-color: none;
+  height: 15rem;
+  width: 15rem;
+
+  border-radius: 2rem;
+  box-shadow: 0 10px 45px rgba(3, 3, 3, 0.1);
+  transition: all 0.3s;
+}
+
+.img-step1 {
+  background-image: url(/ressources/img1.jpg);
+  background-size: 15rem;
+}
+
+.img-step2 {
+  background-image: url(/ressources/img2.jpg);
+  background-size: 15rem;
+}
+
+.img-step3 {
+  background-image: url(/ressources/img3.jpg);
+  background-size: 15rem;
+}
+
+.arrow {
+  position: absolute;
+  width: 8%;
+}
+
+.arrow--left {
+  bottom: 10%;
+  left: 30%;
+}
+.arrow--right {
+  bottom: 10%;
+  right: 30%;
+}
+
+.tilt-left:hover {
+  transform: rotate(-10deg);
+  box-shadow: none;
+}
+
+.tilt-up:hover {
+  transform: translateY(-10px);
+  box-shadow: none;
+}
+
+.tilt-right:hover {
+  transform: rotate(10deg);
+  box-shadow: none;
+}
